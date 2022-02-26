@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  font-size: 40px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+div.calculator {
+  display: flex;
+  width: 400px;
+  flex-wrap: wrap;
+}
+
+div.calculator div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 2px solid #000;
+}
+
+div.calculator div.output {
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.one-cell {
+  flex: 1 1 25%;
+}
+
+.two-cells {
+  flex: 2 2 50%;
+}
+
+.three-cells {
+  flex: 3 3 75%;
+}
+
+.four-cells {
+  flex: 4 4 100%;
+}
+
+.output {
+  background-color: #000;
+  color: #fff;
+}
+
+.left-panel {
+  background: #d8d9db;
+}
+
+.left-panel:hover {
+  background-color: #f2f2f3;
+  cursor: pointer;
+}
+
+.right-panel {
+  background-color: #df974c;
+  color: #fff;
+}
+
+.right-panel:hover {
+  background-color: #e7b279;
+  cursor: pointer;
+}
